@@ -4,7 +4,8 @@ $conn = mysqli_init();
 mysqli_real_connect($conn, 'itflabtest084.mysql.database.azure.com', 'thanee@itflabtest084', 'Yongyong0', 'itflabtest', 3306);
 $Price=$_POST['Price'];
 $Discount=$_POST['Discount'];
-$sql="UPDATE Information SET Price='$Price',Discount='$Discount', WHERE ID='$id'";
+$Total=$_POST['Total']
+$sql="UPDATE Information SET Price='$Price',Discount='$Discount',Total='$Total' WHERE ID='$id'";
 if (mysqli_query($conn, $sql)) {
     header("Location: show.php");
   } else {

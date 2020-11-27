@@ -7,7 +7,6 @@ $Price=$_POST['Price'];
 $Discount=$_POST['Discount'];
 $discounted = ($Price * $Discount)/100;
 $Total = $Price - $discounted;
-$Total=$_POST['Total'];
 $sql="UPDATE Information SET Product='$Product', Price='$Price',Discount='$Discount',Total='$Total' WHERE ID='$id'";
 if (mysqli_query($conn, $sql)) {
     header("Location: show.php");

@@ -44,7 +44,7 @@ while($Result = mysqli_fetch_array($res))
             <td><?php echo $Result['Product'];?></td>
             <td><?php echo $Result['Price'];?></td>
             <td><?php echo $Result['Discount'];?></td>
-            <td><?php echo $Result[''];?></td>
+            <td><?php echo $Result['Total'];?></td>
             <td align="center">
                 <a href="edit.php?ID=<?php echo $Result['ID']?>" class="btn btn-outline-success" >EDIT</a>
                 </tr>

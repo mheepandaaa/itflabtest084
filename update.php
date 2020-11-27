@@ -2,7 +2,7 @@
 $id=$_GET['ID'];
 $conn = mysqli_init();
 mysqli_real_connect($conn, 'itflabtest084.mysql.database.azure.com', 'thanee@itflabtest084', 'Yongyong0', 'itflabtest', 3306);
-$Product=$_POST['Product']
+$Product=$_POST['Product'];
 $Price=$_POST['Price'];
 $Discount=$_POST['Discount'];
 $discounted = ($Price * $Discount)/100;

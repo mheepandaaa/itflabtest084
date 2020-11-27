@@ -11,8 +11,8 @@ if (mysqli_connect_errno($conn))
 $Product = $_POST['Product'];
 $Price = $_POST['Price'];
 $Discount = $_POST['Discount'];
-$discounted = ($Price * $Discount)/100
-$Total = $Price - $discounted
+$discounted = ($Price * $Discount)/100;
+$Total = $Price - $discounted;
 
 
 $sql = "INSERT INTO Information (Product, Price, Discount, Total) VALUES ('$Product', '$Price', '$Discount', '$Total')";
